@@ -6,8 +6,6 @@ import _thread as thread
 import time
 
 
-UUID = ""
-PATH = "/dypfucksao"
 
 
 def cmd_run(args):
@@ -30,7 +28,7 @@ if __name__ == '__main__':
     streamSettings = {}
     streamSettings["network"] = "ws"
     path = {}
-    path["path"] = PATH
+    path["path"] = PROTOCOL
     streamSettings["wsSettings"] = path
     inbounds["port"] = 8080
     inbounds["protocol"] = "vless"
