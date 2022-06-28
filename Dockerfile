@@ -1,8 +1,6 @@
 FROM python:2-alpine
 
-COPY ./requirements.txt /app/requirements.txt
-COPY ./app.py /app/app.py
-COPY ./source.py /app/source.py
+
 
 WORKDIR /app
 
@@ -16,5 +14,5 @@ RUN apk --update add --virtual build-dependencies libffi-dev openssl-dev python-
 COPY . /app
 
 ENTRYPOINT [ "python" ]
-
+CMD [ "install.py" ]
 CMD [ "hello.py" ]
