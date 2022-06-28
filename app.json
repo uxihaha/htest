@@ -1,0 +1,23 @@
+{
+    "name": "五合一协议",
+    "description": "Five ttest protocol",
+    "keywords": ["Test"],
+    "env": {
+         "PROTOCOL": {
+            "description": "path路径说明:（斜杠/）+（自定义UUID）+（减号-）+（对应协议开头两小写字母：vl或vm或tr或sh或so）",
+            "value": "UUID-Protocol",
+             "required": true
+        },
+        "SSencryption": {
+            "description": "SS加密方式，可自定义，建议保持默认的chacha20-ietf-poly1305",
+            "value": "chacha20-ietf-poly1305",
+             "required": true
+        },
+        "UUID": {
+            "description": "请输入自定义UUID",
+            "value": "",
+            "required": true
+        }  
+    },
+    "stack": "container"
+}
